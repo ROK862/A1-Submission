@@ -1,0 +1,29 @@
+.Default-button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 6px;
+  cursor: pointer;
+  width: 75%;
+  margin: auto;
+  display: block;
+  border-radius: 6px;
+  border-radius: 10px;
+  background: rgb(225,1,255);
+  background: linear-gradient( 
+90deg, rgba(225,1,255,1) 0%, rgba(251,0,203,1) 0%, rgba(237,0,121,1) 100%);
+}
+
+.Default-button.current {
+  color: white;
+  background-color: #7048e8;
+}
+
+
+.Default-button:active {
+  background-color: #d0d0d0;
+}

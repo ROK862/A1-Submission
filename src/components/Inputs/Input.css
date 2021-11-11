@@ -1,0 +1,40 @@
+.Default-input {
+  padding: 12px;
+  margin: 12px;
+  width: 70%;
+  margin: 30px auto;
+  display: block;
+}
+
+.section::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+
+select.Default-select {
+  padding: 5px;
+  background: #ffffff;
+  border: none;
+  font-size: 18px;
+}
+
+.StopWatch label {
+  font-size: 12px;
+  padding-right: 15px;
+}
+
+.StopWatch label {
+    font-size: 12px;
+    padding-right: 15px;
+}
+
+.StopWatch {
+    display: inline-block;
+    width: 100%;
+    background: #2a1a52;
+}
+
+.StopWatch .Option-Wraper {
+    width: 30%;
+    display: inline-block;
+}
+
