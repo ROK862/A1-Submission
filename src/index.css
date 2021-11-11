@@ -175,12 +175,34 @@ button.Default-Action-Button:hover {
 .Option-Wraper label, .Input-Wraper label {
   font-size: 15px;
 }
+
+
+
 .Content-Wraper {
-  background: #bb0092;
-  border-radius: 30px;
   font-size: 60px;
   text-align: center;
-  color: white;
+  color: #9ea2c3;
+  background: var(--bgLight-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: visible!important;
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+  box-shadow: 3px 2px 30px 2px #00000024;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s,-webkit-transform 1s;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
 }
 .Component-Title {
   font-size: 12px;
