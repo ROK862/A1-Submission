@@ -26,6 +26,7 @@ const Timer = styled.div`
   text-align: center;
   font-weight: bold;
   border-bottom: 2px solid #f408a6;
+  min-width: 450px;
 `;
 
 const TimerTitle = styled.div`
