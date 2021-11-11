@@ -3,7 +3,7 @@ import AnchorButton from "../buttons/AnchorButton";
 import DigitalWatch from "../generic/DigitalWatch";
 import TimerDisplay from "../generic/TimerDisplay";
 import PauseDisplay from "../generic/PauseDisplay";
-import { AppContext } from "../../globals/AppProvider";
+import { AppContext } from "../../context/AppProvider";
 import TimerGoal from "../generic/TimerGoal";
 
 const Countdown = () => {

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import AnchorButton from "../buttons/AnchorButton";
-import { AppContext } from "../../globals/AppProvider";
+import { AppContext } from "../../context/AppProvider";
 
 function TimerGoal () {
   const { setTimerStatus } = useContext(AppContext);

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import AnchorButton from "../buttons/AnchorButton";
-import { AppContext } from "../../globals/AppProvider";
-import { APP_RENDER_STATES } from "../../globals/Consts"
+import { AppContext } from "../../context/AppProvider";
+import { APP_RENDER_STATES } from "../../context/Consts"
 
 function TimerDisplay () {
   const { currentTimer, rounds, formattedTime:displayTime, setTimerStatus:onPauseTimer, onSkipRound } = useContext(AppContext);

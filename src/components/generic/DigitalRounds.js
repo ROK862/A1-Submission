@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import Options from "../Inputs/Options";
 import AnchorButton from "../buttons/AnchorButton";
-import { AppContext } from "../../globals/AppProvider";
-import { APP_RENDER_STATES } from "../../globals/Consts"
+import { AppContext } from "../../context/AppProvider";
+import { APP_RENDER_STATES } from "../../context/Consts"
 
 function DigitalRounds () {
   // Simplify the code in parent component by getting getters and setters straigt from context

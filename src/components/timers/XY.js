@@ -3,7 +3,7 @@ import AnchorButton from "../buttons/AnchorButton";
 import DigitalRounds from "../generic/DigitalRounds";
 import TimerDisplay from "../generic/TimerDisplay";
 import PauseDisplay from "../generic/PauseDisplay";
-import { AppContext } from "../../globals/AppProvider";
+import { AppContext } from "../../context/AppProvider";
 import TimerGoal from "../generic/TimerGoal";
 
 const XY = () => {

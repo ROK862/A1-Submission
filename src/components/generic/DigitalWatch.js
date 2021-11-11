@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Options from "../Inputs/Options";
 import AnchorButton from "../buttons/AnchorButton";
-import { AppContext } from "../../globals/AppProvider";
+import { AppContext } from "../../context/AppProvider";
 
 function DigitalWatch () {
   // Simplify the code in parent component by getting getters and setters straigt from context

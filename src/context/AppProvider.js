@@ -162,8 +162,6 @@ const AppProvider = ({ children }) => {
       // Test and return the right timer based on the APP_RENDER_STATES and APP_FLOW_STATES.
       // Notice, target time changes based on currentTimer and workflowState.
       // Also, it's cleaner to manage everything here.
-
-      // Oops, I used the conditionals here again, just prefere this compared to IF/ELSE.
       const target = 
       (currentTimer === APP_RENDER_STATES.XY) ? 
       (workflowState === APP_FLOW_STATES.REST) ? 
