@@ -4,7 +4,7 @@ import { AppContext } from "../../globals/AppProvider";
 import { APP_RENDER_STATES } from "../../globals/Consts"
 
 function TimerDisplay () {
-  const { currentTimer, rounds, formattedTime:displayTime, setTimerStatus:onPauseTimer } = useContext(AppContext);
+  const { currentTimer, rounds, formattedTime:displayTime, setTimerStatus:onPauseTimer, onSkipRound } = useContext(AppContext);
 
 
   const renderState = () => {
@@ -21,7 +21,7 @@ function TimerDisplay () {
             Rounds: {rounds}
           </pre>
           <AnchorButton name='Pause' onClick={() => onPauseTimer("paused")} />
-          <AnchorButton name='Next Round' onClick={() => onPauseTimer("paused")} />
+          <AnchorButton name='Next Round' onClick={() => onSkipRound()} />
         </div>
         );
       default:

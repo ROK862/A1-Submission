@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { sys } from "../../utils/helpers";
 
 const Wrapper = styled.div`
   border: 1px solid #dddddd;
@@ -36,29 +37,31 @@ const Documentation = styled.table``;
 class DocumentComponent extends React.Component {
   render() {
     return (
-      <Wrapper>
-        <Title>{this.props.title}</Title>
-        <Container>
-          <RenderComponent>{this.props.component}</RenderComponent>
-          <Documentation>
-            <tr>
-              <th>Prop</th>
-              <th>Description</th>
-              <th>Type</th>
-              <th>Default value</th>
+      <Wrapper key={sys.getKey()}>
+        <Title key={sys.getKey()}>{this.props.title}</Title>
+        <Container key={sys.getKey()}>
+          <RenderComponent key={sys.getKey()}>{this.props.component}</RenderComponent>
+          <Documentation key={sys.getKey()}>
+            <tbody>
+            <tr key={sys.getKey()}>
+              <th key={sys.getKey()}>Prop</th>
+              <th key={sys.getKey()}>Description</th>
+              <th key={sys.getKey()}>Type</th>
+              <th key={sys.getKey()}>Default value</th>
             </tr>
             {this.props.propDocs.map((doc) => {
               return (
-                <tr>
-                  <td>{doc.prop}</td>
-                  <td>{doc.description}</td>
-                  <td>{doc.type}</td>
-                  <td>
-                    <code>{doc.defaultValue}</code>
+                <tr key={sys.getKey()}>
+                  <td key={sys.getKey()}>{doc.prop}</td>
+                  <td key={sys.getKey()}>{doc.description}</td>
+                  <td key={sys.getKey()}>{doc.type}</td>
+                  <td key={sys.getKey()}>
+                    <code key={sys.getKey()}>{doc.defaultValue}</code>
                   </td>
                 </tr>
               );
             })}
+            </tbody>
           </Documentation>
         </Container>
       </Wrapper>

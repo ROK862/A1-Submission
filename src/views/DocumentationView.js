@@ -13,6 +13,7 @@ import Options from "../components/Inputs/Options";
 import DisplayWatch from "../components/generic/DigitalWatch";
 import PauseDisplay from "../components/generic/PauseDisplay";
 import TimerDisplay from "../components/generic/TimerDisplay";
+import TimerGoal from "../components/generic/TimerGoal";
 
 const Container = styled.div`
   display: flex;
@@ -285,7 +286,43 @@ class Documentation extends React.Component {
             ]}
           />
           <DocumentComponent 
-            title="Puase Display"
+            title="Pause Display"
+            component={<PauseDisplay />}
+            propDocs={[
+              {
+                prop: "displayTime",
+                description: "PauseDisplay relies on displayTime which is destructured from AppProvider as a contextValue. This field renders time on the screen.",
+                type: "string",
+                defaultValue: "Required",
+              },{
+                prop: "onResumeTimer",
+                description: "PauseDisplay relies on onResumeTimer which is destructured from AppProvider as a contextValue. onResumeTimer changes state of timer to timing, which intern starts the timer.",
+                type: "function",
+                defaultValue: "Required",
+              },{
+                prop: "onCloseTimer",
+                description: "PauseDisplay relies on onCloseTimer which is destructured from AppProvider as a contextValue. This function closes the timer completely, and resets it.",
+                type: "function",
+                defaultValue: "Required",
+              }
+            ]}
+          />
+
+          <DocumentComponent 
+            title="Timer Goal"
+            component={<TimerGoal currentValues={{ hours:0, minutes:0, seconds:0 }} onSetHours={(e=1)=>null} onSetMinutes={(e=1)=>null} onSetSeconds={(e=1)=>null} onSetRounds={(e=1)=>null} onConvertToTime={(e=1)=>"00:00:00"} onStartTiming={(e=1)=>null} onStopTimer={(e=1)=>null} />}
+            propDocs={[
+              {
+                prop: "setTimerStatus",
+                description: "Timer Goal relies on setTimerStatus from AppProvider. Timer Goal uses this function to set timer active once user has reached its goal. Called with Reset Button.",
+                type: "function",
+                defaultValue: "Required",
+              },
+            ]}
+          />
+
+          <DocumentComponent 
+            title="Pause Display"
             component={<PauseDisplay currentValues={{ hours:0, minutes:0, seconds:0 }} onSetHours={(e=1)=>null} onSetMinutes={(e=1)=>null} onSetSeconds={(e=1)=>null} onSetRounds={(e=1)=>null} onConvertToTime={(e=1)=>"00:00:00"} onStartTiming={(e=1)=>null} onStopTimer={(e=1)=>null} />}
             propDocs={[
               {

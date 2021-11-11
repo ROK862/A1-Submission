@@ -39,7 +39,8 @@ export const AppContext = React.createContext({
   setCurrentTimer: (val) => {},
   shouldRender: (val) => {},
   rounds: 0, 
-  setRounds: (val) => {}
+  setRounds: (val) => {},
+  onSkipRound: (val) => {}
 });
 
 
@@ -138,6 +139,15 @@ const AppProvider = ({ children }) => {
   // Any action on round complete comes here before next render.
   const onCompleteRound = () => {
     playAudio({ clip: "onClick" });
+  }
+
+  const onSkipRound = () => {
+    if (currentTimer !== APP_RENDER_STATES.TABATA || currentTimer === APP_RENDER_STATES.XY) return;
+    setRounds(rounds - 1);
+    setWorkflowState(APP_FLOW_STATES.WORKOUT);
+    onCompleteRound();
+    setformattedTime(formattedTime);
+    setCurrentTime(0);
   }
 
   // This hook handles the tick function, and cleanup of interval before next render.
@@ -252,6 +262,7 @@ const AppProvider = ({ children }) => {
         shouldRender,
         rounds, 
         setRounds,
+        onSkipRound,
       }}
     >
       {children}
