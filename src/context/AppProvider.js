@@ -142,7 +142,7 @@ const AppProvider = ({ children }) => {
   }
 
   const onSkipRound = () => {
-    if (currentTimer !== APP_RENDER_STATES.TABATA || currentTimer !== APP_RENDER_STATES.XY) return;
+    if (currentTimer !== APP_RENDER_STATES.TABATA && currentTimer !== APP_RENDER_STATES.XY) return;
     setRounds(rounds - 1);
     setWorkflowState(APP_FLOW_STATES.WORKOUT);
     onCompleteRound();
