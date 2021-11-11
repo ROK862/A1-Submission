@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import Options from "../Inputs/Options";
 import AnchorButton from "../buttons/AnchorButton";
 import { AppContext } from "../../globals/AppProvider";
-import { useContext } from "react/cjs/react.development";
 import { APP_RENDER_STATES } from "../../globals/Consts"
 
 function DigitalRounds () {

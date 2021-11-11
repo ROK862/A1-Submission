@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import { sys } from "../utils/helpers";
 import AnchorButton from "../components/buttons/AnchorButton";
 import { APP_RENDER_STATES, APP_TIMERS } from "../globals/Consts";
 import { AppContext } from "../globals/AppProvider";
-import { useContext } from "react/cjs/react.development";
 
 const Timers = styled.div`
   align-items: center;
