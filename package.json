@@ -2,7 +2,7 @@
   "name": "assignment-2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://prof-tejera.github.io/assignment-2-ROK862/",
+  "homepage": "https://rok862.github.io/A1-Submission/",
   "dependencies": {
     "firebase": "^9.1.3",
     "framer": "^2.0.0-beta.13",
