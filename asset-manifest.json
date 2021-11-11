@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/A1-Submission/static/css/main.4911c601.chunk.css",
-    "main.js": "/A1-Submission/static/js/main.b09dd2ef.chunk.js",
-    "main.js.map": "/A1-Submission/static/js/main.b09dd2ef.chunk.js.map",
+    "main.css": "/A1-Submission/static/css/main.8ddcdc93.chunk.css",
+    "main.js": "/A1-Submission/static/js/main.6fc01575.chunk.js",
+    "main.js.map": "/A1-Submission/static/js/main.6fc01575.chunk.js.map",
     "runtime-main.js": "/A1-Submission/static/js/runtime-main.0e1c078b.js",
     "runtime-main.js.map": "/A1-Submission/static/js/runtime-main.0e1c078b.js.map",
     "static/js/2.c49b9fa2.chunk.js": "/A1-Submission/static/js/2.c49b9fa2.chunk.js",
     "static/js/2.c49b9fa2.chunk.js.map": "/A1-Submission/static/js/2.c49b9fa2.chunk.js.map",
     "index.html": "/A1-Submission/index.html",
-    "static/css/main.4911c601.chunk.css.map": "/A1-Submission/static/css/main.4911c601.chunk.css.map",
+    "static/css/main.8ddcdc93.chunk.css.map": "/A1-Submission/static/css/main.8ddcdc93.chunk.css.map",
     "static/js/2.c49b9fa2.chunk.js.LICENSE.txt": "/A1-Submission/static/js/2.c49b9fa2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0e1c078b.js",
     "static/js/2.c49b9fa2.chunk.js",
-    "static/css/main.4911c601.chunk.css",
-    "static/js/main.b09dd2ef.chunk.js"
+    "static/css/main.8ddcdc93.chunk.css",
+    "static/js/main.6fc01575.chunk.js"
   ]
 }
