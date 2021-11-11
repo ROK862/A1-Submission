@@ -27,9 +27,10 @@ const Title = styled.div`
 `;
 
 const RenderComponent = styled.div`
-  padding: 25px;
-  display: flex;
-  align-items: center;
+align-items: center;
+    margin: auto;
+    width: auto;
+    display: table;
 `;
 
 const Documentation = styled.table``;

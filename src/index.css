@@ -16,8 +16,8 @@ td, th {
   border: 1px solid #f7f7f7;
   text-align: left;
   padding: 8px;
-  background: #281654;
-  color: white;
+  background: #f9f9f9;
+  color: #281654;
 }
 
 nav {
@@ -70,12 +70,12 @@ nav ul li a {
 }
 
 button.Default-Anchor-Button {
-  padding: 15px;
+  padding: 12px;
   min-width: 200px;
   color: white;
   font-weight: bold;
   font-size: 15px;
-  border-radius: 15px;
+  border-radius: 9px;
   border: 2px solid white;
   background: #281654;
 }
@@ -168,7 +168,6 @@ button.Default-Action-Button:hover {
 }
 .Option-Wraper, .Input-Wraper {
   background: #1e0e46;
-  margin-left: 1%;
   padding: 1%;
   color: white;
   text-align: center;
@@ -198,6 +197,7 @@ button.Default-Action-Button:hover {
 }
 .Timer-Goal-Wraper img {
   width: 100%;
+  max-width: 380px;
 }
 
 .Rounds-Preview {

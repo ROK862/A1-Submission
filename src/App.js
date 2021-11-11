@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import DocumentationView from "./views/DocumentationView";
 import TimersView from "./views/TimersView";
-import AppProvider from "./globals/AppProvider"; 
+import AppProvider from "./context/AppProvider"; 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const Container = styled.div`
