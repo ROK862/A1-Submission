@@ -223,3 +223,8 @@ table.sc-eCstlR {
   display: table;
   margin: auto;
 }
+.Timer-Tittle {
+  font-size: 25px;
+  padding: 10px;
+  font-weight: 300;
+}
